@@ -1,0 +1,77 @@
+:root{
+  --primary:#ff30a5;
+  --primaryDark:#c70076;
+  --primaryLight:#ff6fd6;
+}
+.name{
+  background-color: var(--primaryLight);
+  font-family: elephant;
+}
+.navbar{
+  background-color: var(--primaryDark);
+  opacity: 0.9;
+  padding-left: 1em;
+}
+.subtitle{
+  font-family: "monotype corsiva";
+  text-align: center;
+  animation: slidesubtitle 5s forwards;
+  animation-timing-function: ease-in;
+  overflow: hidden;
+}
+.introImage img{
+  width: 200px;
+  height: 200px;
+}
+.major, .department{
+  text-align: center;
+  display: block;
+  animation: slidesubtitle 5s forwards;
+  animation-timing-function: ease-in;
+  overflow: hidden;
+}
+@keyframes slidesubtitle {
+  0%{transform: scale(0); opacity: 0;}
+  50%{transform: scale(0.5);}
+  100%{transform: scale(1); opacity: 1;}
+}
+.title{
+animation: slideLeftRight 2s forwards;
+animation-timing-function: ease-in;
+}
+@keyframes slideLeftRight {
+  from{transform: translateX(-100%);}
+  to{transform: translateX(0%);}
+}
+.quote{
+animation: slideRightLeft 2s forwards;
+animation-timing-function: ease-in;
+overflow: hidden;
+}
+@keyframes slideRightLeft {
+  from{transform: translateX(100%);}
+  to{transform: translateX(0%);}
+}
+/* -- Footer --*/
+.footer{
+  background-color: var(--primary);
+}
+.ptitle1, .ptitle2{
+  background-color: var(--primaryDark);
+  padding: 0.5em;
+}
+.card{
+  height: 655px;
+  box-shadow: 5px -2px 10px gray;
+}
+.Instagram, .Pinterest{
+  width: 50px;
+}
+.prcard{
+animation: invert 2.5s infinite;
+animation-direction: alternate;
+}
+@keyframes invert {
+  0%{filter: invert(0%);}
+  100%{filter: invert(100%);}
+}
