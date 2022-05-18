@@ -1,0 +1,43 @@
+.titlecontainer{
+  position: absolute;
+  top: 25%;
+  left: 19%;
+  color: white;
+  font-size: 2.5em;
+}
+.nav1{
+  position: absolute;
+  top: 85%;
+  left: 15%;
+  font-size: 25px;
+  background-color: lightgray;
+  border: ridge 5px darkgray;
+  padding: 15px;
+}
+.nav2{
+  position: absolute;
+  top: 85%;
+  left: 43%;
+  font-size: 25px;
+  background-color: lightgray;
+  border: ridge 5px darkgray;
+  padding: 15px;
+}
+.nav3{
+  position: absolute;
+  top: 85%;
+  left: 65%;
+  font-size: 25px;
+  background-color: lightgray;
+  border: ridge 5px darkgray;
+  padding: 15px;
+}
+.title1,.title2,.title3{
+  text-decoration: underline;
+  text-align: center;
+}
+footer{
+  font-size: 20px;
+  text-align: center;
+  padding: 15px;
+}

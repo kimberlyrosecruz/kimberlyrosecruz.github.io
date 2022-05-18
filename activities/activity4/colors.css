@@ -1,0 +1,165 @@
+.title{
+  background-color: rgb(222,22,72);
+  text-align: center;
+  color: white;
+  padding: 12px 0px;
+}
+span{
+  font-size: 100px;
+  font-weight: 800;
+}
+.google1, .google4{
+  color: rgb(78,129,238);
+}
+.google2, .google6{
+  color: rgb(221,26,60);
+}
+.google3{
+  color: rgb(248,195,41);
+}
+.google5{
+  color: rgb(36,191,90);
+}
+.primary, .light, .dark{
+  background-color: #6e5fc9;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+}
+.light{
+  background-color: #a18dfd
+}
+.dark{
+  background-color: #3b3597
+}
+.figure1{
+  width: 80%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image1{
+  width: 100%;
+}
+.p_figure1{
+  position: absolute;
+  background-color: rgba(50,50,50,0.1);
+  color: lightgray;
+  top: 2%;
+  left: 5%;
+  right: 5%;
+  padding: 12px;
+  font-size: 50px;
+  text-align: center;
+}
+/* sticky position */
+.stickytop{
+  background-color: rgba(52,168,83,0.5);
+  padding: 1em;
+  font-size: 2em;
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  position: sticky;
+  top: 0px;
+}
+.heroimage{
+  background-image: linear-gradient(rgba(248,195,41,0.5),rgba(221,26,60,0.5)), url("prettysky.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: solid 10px;
+  height: 600px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.herotitle{
+  position: absolute;
+  top: 40%;
+  bottom: 40%;
+  text-align: center;
+  left: 30%;
+  right: 30%;
+  font-size: 50px;
+}
+.herop{
+  position: absolute;
+  width: 30%;
+  left: 10%;
+  top: 5%;
+  font-size: 20px;
+  font-family: monospace;
+}
+.herop2{
+  position: absolute;
+  width: 25%;
+  right: 2%;
+  bottom: 1%;
+  font-size: 20px;
+  font-family: monospace;
+}
+/* filters */
+.filtercontainer{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.filter1,.filter2,.filter3{
+  width: 250px;
+  height: 300px;
+  margin-left: 20px;
+}
+figcaption{
+  padding: 20px;
+  text-align: center;
+  font-size: 10px;
+}
+.filter1{
+  filter: blur(2px);
+}
+.filter2{
+  filter: sepia(100%);
+}
+.filter3{
+  filter: invert(100%);
+}
+/*paris images filter*/
+.parisfilter{
+  position: relative;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.paris1,.paris2,.paris3{
+  width: 355px;
+  height: 500px;
+  margin-left: 25px
+}
+.paris1{
+  filter: invert(100%);
+}
+.paris2{
+  filter: blur(3px);
+}
+.paris3{
+  background-image: linear-gradient(rgba(248,195,41,0.5),rgba(221,26,60,0.5)), url("paris3.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.arctitle{
+  position: absolute;
+  top: 0%;
+  background-color: lightgray;
+  text-align: center;
+  left: 30%;
+  right: 30%;
+  font-size: 30px;
+}
+/*footer*/
+.footer{
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+}

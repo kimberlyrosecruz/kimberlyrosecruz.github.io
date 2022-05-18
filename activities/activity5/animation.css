@@ -1,0 +1,333 @@
+.title{
+  background-color: darkblue;
+  color: lightgray;
+  text-align: center;
+  padding: 12px;
+}
+.container{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: outset 10px darkgray;
+  position: relative;
+  overflow: hidden;
+}
+.background{
+  width: 100%;
+}
+.bus{
+  width: 20%;
+  bottom: 0px;
+  right: 0px;
+  position: absolute;
+  animation-name: slideLeftRight;
+  animation-duration: 5s;
+  animation-iteration-count: 2;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+}
+@keyframes slideLeftRight {
+  from{transform: translateX(0%);}
+  to{transform: translateX(-400%);}
+}
+.cloud1{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  animation-name: slideClouds;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+.cloud2{
+  position: absolute;
+  width: 30%;
+  top: -15%;
+  left: 20%;
+  animation: slideClouds 10s infinite;
+}
+.cloud3{
+  position: absolute;
+  width: 40%;
+  top: -30%;
+  left: 60%;
+    animation: slideClouds 13s infinite;
+}
+@keyframes slideClouds {
+  0%{transform: translateX(0%); opacity: 0.9;}
+  100%{transform: translateX(300%); opacity: 0.3;}
+}
+.sun{
+  position: absolute;
+  width: 20%;
+  top: 10%;
+  left: 0%;
+  animation: slideSun 10s forwards;
+}
+@keyframes slideSun {
+  0%{transform: translate(0,0) rotate(0deg); opacity: 0.9;}
+  50%{transform: translate(100px,100px) rotate(100deg); opacity: 0.3;}
+  100%{transform: translate(250px,-20px) rotate(-60deg); opacity: 0.7;}
+}
+.msg{
+  position: absolute;
+  top: 40%;
+  bottom: 40%;
+  left: 20%;
+  right: 20%;
+  text-align: center;
+  animation: zoomMSG 10s forwards;
+}
+@keyframes zoomMSG {
+  0%{transform: scale(0) translate(0,0);}
+  25%{transform: scale(1); color: red;}
+  50%{transform: scale(0.3) translate(100px,50px); color: blue;}
+  75%{transform: scale(2); color: orange;}
+  100%{transform: scale(0) translate(-200px,-300px); color: green;}
+}
+html{
+  scroll-behavior: smooth;
+}
+.horizontaltabs{
+  background-color: purple;
+  color: lightgray;
+  height: 50px;
+  overflow: hidden;
+}
+.horizontaltabs a{
+  color: lightgray;
+  display: inline-block;
+  width: 30%;
+  padding-left: 20%;
+  border: ridge 1px lightgray;
+  float: right;
+  height: 100%;
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+.horizontaltabs a:hover{
+  background-color: blue;
+  text-decoration: underline;
+}
+.horizontaltabs span{
+  border: ridge 1px lightgray;
+  font-family: algerian;
+  display: block;
+  width: 30%;
+  height: 100%;
+  float: left;
+  border-top: ridge 1px lightgray;
+  padding: 8px 20px;
+  font-size: 1.8em;
+}
+.verticaltabs{
+  width: 30%;
+}
+.verticaltabs li{
+  padding: 10px 20px;
+  background-color: orange;
+  list-style-type: none;
+  border: ridge 1px lightgray;
+  text-align: center;
+}
+.verticaltabs li a{
+  text-decoration: none;
+  font-size: 1.2em;
+  color: lightgray;
+}
+.verticaltabs li a:hover{
+  background-color: darkgreen;
+  text-decoration: underline;
+}
+.imagesContainer{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: outset 10px darkgray;
+  position: relative;
+  overflow: hidden;
+}
+.newyork{
+  width: 100%;
+  animation: Invert;
+  animation-duration: 0.3s;
+  animation-iteration-count: 2;
+  animation-delay: 6s;
+}
+@keyframes Invert {
+  0% {filter: invert(0%);}
+  100% {filter: invert(100%);}
+}
+.camera{
+  position: absolute;
+  width: 20%;
+  top: 30%;
+  left: 20%;
+  animation: slideCamera 7s forwards;
+}
+@keyframes slideCamera {
+  0% {transform: scale(0) translate(0,0);}
+  50% {transform: scale(1) translate(1px, 1px);}
+  100% {transform: scale(0) translate(0,0);}
+}
+.text1{
+  position: absolute;
+  top: 15%;
+  bottom: 15%;
+  left: 40%;
+  right: 40%;
+  text-align: center;
+  font-size: 70px;
+  font-family: broadway;
+  color: magenta;
+  animation: zoomMSG 8s forwards;
+}
+@keyframes zoomMSG {
+  0%{transform: scale(0) translate(0,0);;}
+  25%{transform: scale(1);}
+  50%{transform: scale(0.5) translate(50px, 25px) color: yellow;;}
+  75%{transform: scale(2);}
+  100%{transform: scale(0) translate(-100px,-100px);;}
+}
+.heart1{
+  position: absolute;
+  width: 20%;
+  top: 20%;
+  left: 20%;
+  animation: slideHeart 1s infinite;
+  animation-delay: 8s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  opacity: 0;
+}
+.heart2{
+  position: absolute;
+  width: 10%;
+  top: 15%;
+  left: 5%;
+  animation: slideHeart 0.5s infinite;
+  animation-delay: 8s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  opacity: 0;
+}
+.heart3{
+  position: absolute;
+  width: 15%;
+  top: 30%;
+  left: 60%;
+  animation: slideHeart 0.8s infinite;
+  animation-delay: 8s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  opacity: 0;
+}
+.heart4{
+  position: absolute;
+  width: 25%;
+  top: 10%;
+  left: 75%;
+  animation: slideHeart 1.5s infinite;
+  animation-delay: 8s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  opacity: 0;
+}
+.heart5{
+  position: absolute;
+  width: 10%;
+  top: 60%;
+  left: 70%;
+  animation: slideHeart 0.5s infinite;
+  animation-delay: 8s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  opacity: 0;
+}
+.heart6{
+  position: absolute;
+  width: 5%;
+  top: 50%;
+  left: 40%;
+  animation: slideHeart 0.3s infinite;
+  animation-delay: 8s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  opacity: 0;
+}
+.heart7{
+  position: absolute;
+  width: 15%;
+  top: 5%;
+  left: 50%;
+  animation: slideHeart 0.7s infinite;
+  animation-delay: 8s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  opacity: 0;
+}
+.heart8{
+  position: absolute;
+  width: 15%;
+  top: 60%;
+  left: 10%;
+  animation: slideHeart 0.6s infinite;
+  animation-delay: 8s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  opacity: 0;
+}
+.heart9{
+  position: absolute;
+  width: 18%;
+  top: 55%;
+  left: 40%;
+  animation: slideHeart 1.3s infinite;
+  animation-delay: 8s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  opacity: 0;
+}
+.heart10{
+  position: absolute;
+  width: 8%;
+  top: 40%;
+  left: 10%;
+  animation: slideHeart 0.4s infinite;
+  animation-delay: 8s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  opacity: 0;
+}
+.heart11{
+  position: absolute;
+  width: 10%;
+  top: 5%;
+  left: 30%;
+  animation: slideHeart 0.9s infinite;
+  animation-delay: 8s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  opacity: 0;
+}
+.heart12{
+  position: absolute;
+  width: 15%;
+  top: 70%;
+  left: 80%;
+  animation: slideHeart 0.6s infinite;
+  animation-delay: 8s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  opacity: 0;
+}
+@keyframes slideHeart {
+  0%{transform: scale(0); opacity: 0;}
+  100%{transform: scale(1); opacity: 1;}
+}
+footer{
+  text-align: center;
+}
