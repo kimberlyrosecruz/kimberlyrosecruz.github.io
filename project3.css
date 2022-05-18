@@ -68,7 +68,7 @@ overflow: hidden;
   width: 50px;
 }
 .prcard{
-animation: invert 0.5s infinite;
+animation: invert 1s infinite;
 animation-direction: alternate;
 }
 @keyframes invert {
